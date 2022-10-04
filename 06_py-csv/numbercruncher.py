@@ -15,14 +15,14 @@ QCC:
 
 import random, csv
 
-jobTitles = []
-percentage = []
+_storeValues = {0:[], 1:[]}
 
 with open('occupations.csv') as f:
     reader = csv.reader(f)
     for row in reader:
-        jobTitles.append(row[0])
-        percentage.append(float(row[1]))
-#print(jobTitles)
-#print(percentage)
-print(random.choices(jobTitles, weights = percentage)[0])
+        if row[0] != "Job Class" and row[0] != "Total":
+            _storeValues[0].append(row[0])
+            _storeValues[1].append(float(row[1]))
+
+
+print(random.choices(_storeValues[0], weights = _storeValues[1])[0])
