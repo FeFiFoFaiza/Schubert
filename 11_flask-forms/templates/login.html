@@ -31,10 +31,14 @@
     <h3>
       Enter your username below to proceed.
     </h3>
-    <form action="/auth"> <!--form action leads to authenticate page-->
-      Username: <input type="text" name="username"> <br>
-      Password: <input type="text" name="password"> <br>
+    <form action="/auth" method="POST"> <!--form action leads to authenticate page-->
+      Username: <input type="text" name="username" value="enter a username"> <br>
+      Password: <input type="text" name="password" value="enter a password"> <br>
       <input type="submit" name="sub1">
+    </form>
+
+    <form action="/create_acc">
+      <input type="submit" value="new_acc">
     </form>
     <br>
   </body>

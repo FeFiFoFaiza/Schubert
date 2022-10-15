@@ -1,0 +1,10 @@
+init thoughts:
+- ong bro have no clue how to do get v post 
+- i want to be ta :(
+
+later thoughts:
+- you can specify the method type in the template
+- request.form['username'] works for POST but the given one doesn't
+- post = no caching
+- I got a bit carried away.... BUT IT WORKSSSSSSSSSSSSS
+- no SQL tho bc thats like second sem stuff
