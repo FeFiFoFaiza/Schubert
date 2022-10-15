@@ -1,0 +1,3 @@
+Q0: It will result in error because we need render_template as it's part of ze code
+Q1: localhost/myfoisttemplate
+Q2: the first argument is the template being used the others are the stuff you replace in said template
