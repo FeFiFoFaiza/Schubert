@@ -1,7 +1,8 @@
-# Clyde 'Thluffy' Sinclair
+# Faiza Huda
 # SoftDev
 # Oct 2022
 
+from functools import total_ordering
 from flask import Flask             #facilitate flask webserving
 from flask import render_template   #facilitate jinja templating
 from flask import request           #facilitate form submission
@@ -10,6 +11,7 @@ from flask import request           #facilitate form submission
 #from flask import Flask, render_template, request
 
 app = Flask(__name__)    #create Flask object
+totally_secure = {}
 
 
 '''
@@ -23,12 +25,12 @@ Execute your tests.
 Process results.
 
 PROTIP: Insert your own in-line comments
- wherever they will help
-  your future self and/or current teammates
-   understand what is going on.
+    wherever they will help
+    your future self and/or current teammates
+    understand what is going on.
 '''
 
-@app.route("/") #, methods=['GET', 'POST'])
+@app.route("/", methods=['GET', 'POST'])
 def disp_loginpage():
     print("\n\n\n")
     print("***DIAG: this Flask obj ***")
@@ -37,27 +39,47 @@ def disp_loginpage():
     print(request)
     print("***DIAG: request.args ***")
     print(request.args)
+    #### This breaks code bc there is no username key or any key for that fact
     #print("***DIAG: request.args['username']  ***")
     #print(request.args['username'])
+    ####
     print("***DIAG: request.headers ***")
     print(request.headers)
     return render_template( 'login.html' )
 
 
-@app.route("/auth") # , methods=['GET', 'POST'])
+@app.route("/auth" , methods= ['GET','POST'])
 def authenticate():
     print("\n\n\n")
     print("***DIAG: this Flask obj ***")
     print(app)
     print("***DIAG: request obj ***")
     print(request)
-    print("***DIAG: request.args ***")
-    print(request.args)
-    #print("***DIAG: request.args['username']  ***")
-    #print(request.args['username'])
+    if request.method == "POST":
+        print("***DIAG: request.args ***") # ImmutableMultiDict([('username', 'looloo'), ('sub1', 'Submit')])
+        #print(request.args) #Seems to output nothing for POST
+        print(request.form['username']) # This works however
+        if ((request.form['username'] in totally_secure.keys()) & (request.form['password'] in totally_secure.values())):
+            return "congrates you made it"
+        else:
+            return "wrong password or username try again :("
+    else: 
+        # It seems that when trying this method with POST form request it breaks
+        print("***DIAG: request.args['username']  ***")
+        print(request.args['username'])
     print("***DIAG: request.headers ***")
     print(request.headers)
     return "Waaaa hooo HAAAH"  #response to a form submission
+
+@app.route("/create_acc", methods= ['GET','POST'])
+def create():
+    print("HELOO???")
+    return render_template( 'account.html')
+
+@app.route("/adding", methods= ['GET','POST'])
+def update():
+    totally_secure[request.form['username']] = request.form['password']
+    return disp_loginpage()
 
 
     
