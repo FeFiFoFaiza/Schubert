@@ -1,3 +1,8 @@
-body {
-    font-size: 100px;
+h2{
+        display: inline-block;
+        margin-left: 150px;
+}
+#footer{
+        text-align: right;
+        color: #D4D4D4;
 }
