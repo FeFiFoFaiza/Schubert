@@ -1,0 +1,42 @@
+# how-to :: neuronetworks
+---
+## Overview
+Neuronetworks are powerful! We want to use them to analyze data sets and make predictive models
+
+### Estimated Time Cost: 10 hrs (round to nearest 0.1)
+
+### Prerequisites:
+
+- Something you should know beforehand: there will be a lot of python and jupiter notebooks involved!
+- Something you will need installed beforehand... tensorflow, matplotlib, 
+
+1. Import LSTM kera package from tensorflow
+2. Add Sequential layers
+3. Retrieve data, fit data, and then scale data based on index 0 to 1
+    ```
+    generic code block or terminal command
+    ```
+   and/or...
+    ```javascript
+    var foo = "this that JS tho";
+    ```
+   and/or...
+    ```python
+    print("this that Python tho")
+    ```
+   and/or...
+4. Pass data through LSTM model, you can graph validation loss/ testing/training loss
+5. Train da machine
+
+### Resources
+* Kaggle
+* Yahoo finance
+
+---
+
+Accurate as of (last update): 2022-mm-dd
+
+#### Contributors:  
+Crazy Chatty Chicks
+
+_Note: the two spaces after each name are important! ( <--burn after reading)  _
