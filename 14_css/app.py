@@ -18,7 +18,7 @@ def disp_loginpage():
     ####
     print("***DIAG: request.headers ***")
     print(request.headers)
-    return render_template( 'mimic.html' )
+    return render_template( 'index.html' )
 
     
 if __name__ == "__main__": #false if this file imported as module

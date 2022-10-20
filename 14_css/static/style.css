@@ -1,0 +1,47 @@
+h1 {
+        text-align: center;
+        background-color: rgb(190, 190, 190);
+        color: #ffffff;
+        margin: 0;
+        padding: 0.5vw;
+      }
+      
+      p, h1, li, h3 {
+        letter-spacing: -1px;
+      }
+      
+      table {
+        border: none;
+      }
+      
+      td {
+        vertical-align: top;
+        background: rgb(118, 118, 118);
+      }
+      
+      ul {
+        padding-left: 0;
+      }
+      
+      li {
+        list-style: none;
+        width: 23vw;
+        color: rgb(218, 218, 206);
+      }
+      
+      body {
+        background-color: rgb(113, 110, 110);
+        font-family: 'Arial';
+      }
+      
+      #copyright {
+        text-align: right;
+        background-color: rgb(66, 56, 56);
+        color: rgb(183, 177, 177);
+        margin: 0;
+        padding: 1vw;
+      }
+      
+      #nav {
+        padding-left: 1vw;
+      }
