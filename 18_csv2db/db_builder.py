@@ -19,7 +19,7 @@ with open ('students.csv', newline ='') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
         print(row['name'], row['age'], row['id'])
-        command = f"insert into students values({row['name']},{row['age']},{row['id']})"
+        command = f"insert into students values('allison',{row['age']},{row['id']})"
         c.execute(command)
 
 #==========================================================
