@@ -2,6 +2,10 @@
 ---
 ## Overview
 SQLite is the lite weight, handy dandy way of making and organising a database.
+SQL is a language for storing and retrieving data stored in a database. 
+The standard language for RDMS (Relational Database Management System), of which include MySQL, MS Access, 
+Oracle, Sybase, Informix, Postgres, and SQL Server.
+
 This guide will teach you how to create, show, and save a one table database.
 
 ### Estimated Time Cost: 0.5 hrs (Depending on your data)
