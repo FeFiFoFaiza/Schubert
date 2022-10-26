@@ -12,20 +12,31 @@ DB_FILE="discobandit.db"
 db = sqlite3.connect(DB_FILE) #open if file exists, otherwise create
 c = db.cursor()               #facilitate db ops -- you will use cursor to trigger db events
 
-command = "create table students(name text, age int, id text)"
+#only create if not exist already
+command = "create table if not exists students(name text, age int, id text)"
 c.execute(command)
 
-with open ('students.csv', newline ='') as csvfile:
-    reader = csv.DictReader(csvfile)
-    for row in reader:
-        print(row['name'], row['age'], row['id'])
-        command = f"insert into students values('allison',{row['age']},{row['id']})"
-        c.execute(command)
+command = "create table if not exists courses(code text, mark int, id text)"
+c.execute(command)
 
 #==========================================================
 
 
 # < < < INSERT YOUR TEAM'S POPULATE-THE-DB CODE HERE > > >
+
+with open ('students.csv', newline ='') as csvfile:
+    reader = csv.DictReader(csvfile)
+    for row in reader:
+        #print(row['name'], row['age'], row['id'])
+        command = f"insert into students values('{row['name']}',{row['age']},{row['id']})" #only seems to work when the first {} in the fstr is in quotes
+        c.execute(command)
+
+with open ('courses.csv', newline ='') as csvfile:
+    reader = csv.DictReader(csvfile)
+    for row in reader:
+        #print(row['code'], row['mark'], row['id'])
+        command = f"insert into students values('{row['code']}',{row['mark']},{row['id']})"
+        c.execute(command)
 
 '''
 command = "create table urmom(weight int, height int, age int, sexiness double)"          # test SQL stmt in sqlite3 shell, save as string

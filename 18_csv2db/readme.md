@@ -1,3 +1,5 @@
+## Crazy Chatting Chickens
+------
 #### Relational database
 * DB that stores information as a collection of tables.
 * FIELD: "Column" data in a RDB
