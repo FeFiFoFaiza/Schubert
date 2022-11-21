@@ -1,0 +1,6 @@
+1. Figure how to automatically get request from nasa via computar 
+    ACCOMPLISH THIS VIA URLLIB
+2. Convert to python dict
+    USE JSON TO CONVERT
+3. Reference this image and render this image 
+    USE JINJA?
