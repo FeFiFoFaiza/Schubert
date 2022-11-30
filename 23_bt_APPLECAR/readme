@@ -1,0 +1,16 @@
+AppleCar | Faiza Huda, Abid Talukder
+SoftDev
+K23 -- A Day of Noodling
+2022-11-23
+time spent: 1hr
+
+Notable Notes:
+  - Bootstrap is known for it's responsive design (ie. screen ratios)
+  - Fluid containers smoothly move as the screen gets smaller or larger. Normal containers have quite a jagged movement.
+  - Containers are required if you're using the BT flavored grid system
+  - Grids have rows and columns. You can specify the size of the rows and coloumns.
+  - BT also has navbars (which are defaultly responsive)
+  - Cards are also a thing but honestly they seem quite normal and not needed to be singled out like that tbh, it's not that special
+  - Buttons are very simple to create. One class will dictate all the padding and text styles.
+  - Bootstrap offers many code snippets for you to play around with so you can see what you like best.
+  - We learned when searching for images in Google that if you click tools and color transparent, it will filter all images to be transparent.
