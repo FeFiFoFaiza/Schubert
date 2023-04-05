@@ -1,0 +1,21 @@
+Team Mighty Morphin Flower Arrangers :: Marc Jiang, Faiza Huda
+SoftDev pd7
+K27 -- Basic functions in JavaScript
+2023-04-05w
+
+DISCO
+-----------------------------------------------------------------
+* Use DrRacket!!
+* JS syntax is very similar to Java
+* You can run JS methods by calling the function name in the web console
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* Why are we coding in scheme first then importing it to JS?
+* What is the use of lambda?
+* Why is prefix notation useful at all?
+* How can we run scheme in cmd line or in vscode?
+=================================================================
+
+
