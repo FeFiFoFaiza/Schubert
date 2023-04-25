@@ -1,0 +1,5 @@
+Faiza
+
+Turns out I already did this for hw 28
+What would be the parameters of the functions?
+    I used index of list
