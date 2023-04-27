@@ -51,9 +51,9 @@ var dvdLogoSetup = function() {
     var rectWidth = 120;
     var rectHeight = 80;
 
-    var rectX = 120 + Math.random(300);
-    var rectY = 80 + Math.random(300);
-
+    var rectX = 50 + Math.random()*300;
+    var rectY = 80 + Math.random()*300;
+    console.log(Math.random(300));
     var xVelocity = 1;
     var yVelocity = 1;
 
@@ -70,10 +70,10 @@ var dvdLogoSetup = function() {
         if (( rectY <= 0 ) || ( rectY + rectHeight >= 500)){
             yVelocity *= -1;
         }
-        
-        //requestID = window.requestAnimationFrame(requestID);
-    }
-
+        rectX+=xVelocity;
+        rectY+=yVelocity;
+        requestID = window.requestAnimationFrame(dvdLogo);
+    };
     dvdLogo();
 }
 
@@ -86,8 +86,8 @@ var stopIt = () => {
 dotButton.addEventListener("click", () => {
     window.cancelAnimationFrame(requestID);
     drawDot();
-    requestID = window.requestAnimationFrame(growDot);
 });
+
 
 stopButton.addEventListener("click", stopIt);
 
