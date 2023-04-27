@@ -1,18 +1,18 @@
-Team Hilarous Pirating Pirates :: Kevin Wang, Faiza Huda
+Team Might Morphin Flower Arrangers :: Marc Jiang, Faiza Huda
 
 SoftDev pd7
 
-K31 -- Canvas in javascript
+K32 -- Canvas in javascript
 
-2023-04-25
+2023-04-26
 
 DISCO
 
 -----------------------------------------------------------------
 
-* use requestId as parameter to cancel the animation
+* multiplying velocity by -1 makes it look like its reflecting off the wall
 
-* we recurively call drawDot
+* Math.random() only returns a float from 0 to 1. you'd have to multiply by a bigger constant to get a useful number
 
 =================================================================
 
@@ -20,9 +20,10 @@ QCC
 
 -----------------------------------------------------------------
 
-* why does our code work with growDot instead of drawDot
+* what does preventDefault() mean? why doesnt it work? how do you make it work?
 
-* why does the circle grow faster if you spam the button without the canceling code
+* do we need to make it change colors when it hits the corner?
+
+* what does cancelAnimationFrame() do in the beginning of the draw functions?
 
 =================================================================
-
