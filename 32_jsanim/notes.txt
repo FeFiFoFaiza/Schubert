@@ -1,0 +1,28 @@
+Team Hilarous Pirating Pirates :: Kevin Wang, Faiza Huda
+
+SoftDev pd7
+
+K31 -- Canvas in javascript
+
+2023-04-25
+
+DISCO
+
+-----------------------------------------------------------------
+
+* use requestId as parameter to cancel the animation
+
+* we recurively call drawDot
+
+=================================================================
+
+QCC
+
+-----------------------------------------------------------------
+
+* why does our code work with growDot instead of drawDot
+
+* why does the circle grow faster if you spam the button without the canceling code
+
+=================================================================
+
