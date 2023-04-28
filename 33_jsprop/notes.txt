@@ -1,0 +1,20 @@
+Team Hilarous Pirating Pirates :: Kevin Wang, Faiza Huda
+SoftDev pd7
+K33 -- JS Bubble & Squeak
+2023-04-27
+
+DISCO
+-----------------------------------------------------------------
+* Capture happens first - we go from ancestor to children
+* Bubble happens afterwards - we go from child to ancestor
+* true - capture
+* false - bubble
+* default - bubble (nothing)
+* e.stopPropagation() - prevents further capture and bubbling
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* how to pronounce obi-wan
+=================================================================
+
